@@ -1,0 +1,1118 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: white;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 50px 50px;
+    box-sizing: border-box; 
+}
+
+.nav-logo {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-logo img {
+    width: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 150px;
+}
+
+.nav-menu a {
+    color: #0D0A38;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.nav-menu a:hover {
+    color: #203C5B;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section home */
+
+.section-home {
+    background-image: url(img/img\ cidade.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-home h1 {
+    color: #7CA6D5;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.section-home p {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 100px;
+}
+
+.section-home a {
+    background-color: #7CA6D5;
+    color: #0D0A38;
+    width: 250px;
+    margin-top: 80px;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* Section sobre mim */
+
+.section-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-sobre h1 {
+    font-size: 35px;
+    stop-color: #0D0A38;
+    margin: 50px;
+}
+
+.container-sobre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.sobre-fotos {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.sobre-fotos img {
+    width: 260px;
+    padding: 20px 30px;
+}
+
+#img-direita {
+    align-self: end;
+}
+
+.sobre-descricao {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobre-descricao p {
+    padding: 20px 20px 20px 90px;
+    font-size: 20px;
+    margin: 1px solid black;
+}
+
+#ultimo-p {
+    margin-bottom: 30px;
+}
+
+.sobre-descricao a {
+    background-color: #7CA6D5;
+    color: #0D0A38;
+    width: 70%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 90px;
+}
+
+/* Section Imoveis */
+
+.section-imoveis {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: #040311;
+    /*background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;*/
+    color: #fff;
+}
+
+.section-imoveis h1 {
+    font-size: 35px;
+    margin: 90px 0px 50px 0px;
+}
+
+.container-imoveis {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.imoveis-img {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/mundo\ park\ escuro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.imoveis-img:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    background-image: url(img/mundo\ park.png);
+    font-size: 35px;
+
+}
+
+.imoveis-img h2 {
+    font-size: 30px;
+}
+
+/* Section MCMV */
+
+.section-mcmv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7CA6D5;
+}
+
+.section-mcmv h1 {
+    font-size: 35px;
+    margin: 90px 0px 100px 0px;
+}
+
+.container-box {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.box-mcmv {
+    width: 280px;
+    height: 290px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.box-mcmv img {
+    width: 80px;
+}
+
+.box-mcmv h3 {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    color: #0D0A38;
+}
+
+.box-mcmv p {
+    font-size: 18px;
+    padding: 30px 15px;
+    text-align: center;
+    color: #676671;
+}
+
+/* Section contato*/
+
+.section-contato {
+    width: 100%;
+    display: flex;
+}
+
+.contato-descricao {
+    padding: 70px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contato-descricao h1 {
+    font-size: 40px;
+    padding: 60px 0px 0px 0px;
+}
+
+.contato-descricao p {
+    font-size: 25px;
+}
+
+.contato-icons {
+    display: flex;
+    width: 100px;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contato-icons img {
+    width: 50px;
+}
+
+.contato-forms {
+    width: 45%;
+    padding: 10px 30px;
+    padding: 70px;
+}
+
+.formulario-container {
+    background-color: #c7dbf2;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    font-size: 14px;
+}
+
+.formulario textarea {
+    resize: none;
+}
+
+.formulario button {
+    background-color: #7CA6D5;
+    color: #0D0A38;
+    width: 93%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #6ba5d6;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-links {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    background-color: #0D0A38;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.div-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.div-copi {
+    display: flex;
+    flex-direction: row;
+    background-color: #07051D;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+/* 1000px a 1199px */
+@media (min-width: 1000px) and (max-width: 1199px) {
+    .nav-logo {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .nav-logo img {
+        width: 40px;
+    }
+
+    .nav-menu {
+        gap: 100px;
+    }
+
+    .nav-menu a {
+        font-size: 20px;
+    } 
+
+    .imoveis-img {
+        width: 350px;
+        height: 250px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 800px a 999px */
+@media (min-width: 800px) and (max-width: 999px) {
+
+    .nav-logo {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .nav-logo img {
+        width: 40px;
+    }
+
+    .nav-menu {
+        gap: 50px;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+    }    
+
+    .section-home {
+        background-image: url(img/img\ cidade.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-home h1 {
+        color: #7CA6D5;
+        font-size: 35px;
+        margin-left: 80px;
+    }
+
+    .section-home p {
+        color: #fff;
+        font-size: 16px;
+        margin-left: 80px;
+    }
+
+    .section-home a {
+        margin-top: 60px;
+        font-size: 15px;
+        margin-left: 80px;
+    }
+
+    .section-sobre h1 {
+        font-size: 30px;
+    }
+
+    .sobre-fotos {
+        align-items: center;
+    }
+
+    .sobre-fotos img {
+        width: 270px;
+        padding: 50px 30px;
+    }
+
+    #img-direita {
+        align-self: center;
+    }
+
+    .sobre-descricao p {
+        padding: 20px 20px 20px 80px;
+        font-size: 18px;
+    }
+
+    #ultimo-p {
+        margin-bottom: 30px;
+    }
+
+    .sobre-descricao a {
+        width: 65%;
+        margin-left: 80px;
+    }
+
+    .section-imoveis h1 {
+        font-size: 30px;
+        margin: 90px 0px 80px 0px;
+    }
+
+    .container-imoveis {
+        gap: 20px;
+    }
+
+    .imoveis-img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .imoveis-img:hover {
+        font-size: 25px;
+    }
+
+    .imoveis-img h2 {
+        font-size: 20px;
+    }
+
+    .section-mcmv h1 {
+        font-size: 30px;
+        margin: 90px 0px 100px 0px;
+    }
+
+    .container-box {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+
+    .box-mcmv {
+        width: 240px;
+        height: 260px;
+    }
+
+    .box-mcmv img {
+        width: 65px;
+    }
+
+    .box-mcmv h3 {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    .box-mcmv p {
+        font-size: 15px;
+        padding: 20px 15px;
+    }
+
+    .contato-descricao {
+        padding: 50px;
+    }
+
+    .contato-descricao h1 {
+        font-size: 35px;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .contato-descricao p {
+        font-size: 20px;
+    }
+
+    .contato-icons img {
+        width: 40px;
+    }
+
+    .contato-forms {
+        width: 50%;
+        padding: 60px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 13px;
+    }
+
+    .formulario button {
+        width: 87%;
+    }
+
+    .formulario button:hover {
+        background-color: #0D0A38;
+        color: #fff;
+    }
+
+    .div-links {
+        gap: 30px;
+        font-size: 15px;
+    }
+
+    .div-copi {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 600px a 799px */
+@media (min-width: 600px) and (max-width: 799px) {
+    .nav-logo {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .nav-logo img {
+        width: 40px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 13px;
+    } 
+
+    .section-home {
+        height: auto;
+    }
+
+    .section-home h1 {
+        margin-top: 150px;
+        font-size: 30px;
+        margin-left: 50px;
+    }
+
+    .section-home p {
+        font-size: 14px;
+        margin-left: 50px;
+    }
+
+    .section-home a {
+        margin-top: 50px;
+        font-size: 14px;
+        margin-left: 50px;
+        margin-bottom: 100px;
+        width: 200px;
+    }
+
+    .section-sobre h1 {
+        font-size: 25px;
+    }
+
+    .sobre-fotos {
+        align-items: center;
+    }
+
+    .sobre-fotos img {
+        width: 200px;
+    }
+
+    #img-direita {
+        align-self: center;
+    }
+
+    .sobre-descricao p {
+        padding: 20px 0px;
+        font-size: 13px;
+    }
+
+    #ultimo-p {
+        margin-bottom: 15px;
+    }
+
+    .sobre-descricao a {
+        margin-left: 0px;
+    }    
+
+    .section-imoveis h1 {
+        font-size: 25px;
+        margin: 60px 0px 60px 0px;
+    }
+
+    .container-imoveis {
+        gap: 10px;
+    }
+
+    .imoveis-img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .imoveis-img:hover {
+        font-size: 20px;
+    }
+
+    .imoveis-img h2 {
+        font-size: 15px;
+    }
+
+    .section-mcmv h1 {
+        font-size: 25px;
+        margin: 60px 0px 70px 0px;
+    }
+
+    .container-box {
+        width: 95%;
+        gap: 15px;
+        padding-bottom: 100px;
+    }
+
+    .box-mcmv {
+        width: 100px;
+        height: 150px;
+    }
+
+    .box-mcmv img {
+        width: 35px;
+    }
+
+    .box-mcmv h3 {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .box-mcmv p {
+        font-size: 10px;
+        padding: 0px 0px;
+    }
+
+    .section-contato {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .contato-descricao {
+        width: 100%;
+        padding: 0px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .contato-descricao h1 {
+        font-size: 25px;
+        padding: 30px 60px;
+    }
+
+    .contato-descricao p {
+        font-size: 18px;
+        padding: 30px 60px;
+    }
+
+    .contato-icons {
+        padding: 30px 60px;
+    }
+
+    .contato-icons img {
+        width: 35px;
+    }
+
+    .contato-forms {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 100px;
+    }
+
+    .formulario-container {
+        background-color: #c7dbf2;
+        padding: 30px;
+        border-radius: 10px;
+        width: 400px;
+        margin-left: 60px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 12px;
+    }
+
+    .formulario textarea {
+        resize: none;
+    }
+
+    footer {
+        height: 130px;
+    }
+
+    .div-links {
+        gap: 20px;
+        font-size: 13px;
+    }
+
+    .div-copi {
+        font-size: 10px;
+    }
+}
+
+/* abaixo de 599px */
+@media (max-width: 599px) {
+    nav {
+        height: 100px;
+    }
+
+    .nav-logo {
+        font-size: 15px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    /* Esconde o menu de navegação por padrão */
+    .nav-menu {
+        position: absolute;
+        left: -100%; /* Começa fora da tela */
+        top: 100px; /* Abaixo do header */
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 0;
+        transition: 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+
+    .nav-menu a {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+
+    .nav-logo img {
+        width: 40px;
+    }
+
+    /* Estilo para quando o menu está ativo (visível) */
+    .nav-menu.active {
+        left: 0; /* Move o menu para dentro da tela */
+    }
+
+    /* Animação do ícone hambúrguer para um "X" quando ativo */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .section-home {
+        height: auto;
+    }
+
+    .section-home h1 {
+        margin-top: 100px;
+        font-size: 25px;
+        margin-left: 30px;
+    }
+
+    .section-home p {
+        font-size: 14px;
+        margin-left: 30px;
+    }
+
+    .section-home a {
+        margin-top: 30px;
+        font-size: 13px;
+        margin-left: 30px;
+        margin-bottom: 100px;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .section-sobre h1 {
+        font-size: 20px;
+    }
+
+    .container-sobre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-fotos {
+        align-items: center;
+        order: 2;
+        width: 80%;
+    }
+
+    .sobre-fotos img {
+        width: 200px;
+        display: none;
+    }
+
+    .sobre-descricao {
+        order: 1;
+        width: 80%;
+        align-items: center;
+    }
+
+    #img-direita {
+        align-self: center;
+    }
+
+    .sobre-descricao p {
+        padding: 20px 0px;
+        font-size: 13px;
+    }
+
+    #ultimo-p {
+        margin-bottom: 15px;
+    }
+
+    .sobre-descricao a {
+        margin-left: 0px;
+        width: 80%;
+    }    
+
+    .section-imoveis h1 {
+        font-size: 20px;
+        margin: 60px 0px 60px 0px;
+    }
+
+    .container-imoveis {
+        gap: 30px;
+    }
+
+    .imoveis-img {
+        width: 70vw;
+        height: 200px;
+    }
+
+    .imoveis-img:hover {
+        font-size: 20px;
+    }
+
+    .imoveis-img h2 {
+        font-size: 15px;
+    }
+
+    .section-mcmv h1 {
+        font-size: 20px;
+        margin: 60px 0px 70px 0px;
+    }
+
+    .container-box {
+        width: 95%;
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+
+    .box-mcmv {
+        width: 200px;
+        height: 180px;
+    }
+
+    .box-mcmv img {
+        width: 50px;
+    }
+
+    .box-mcmv h3 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .box-mcmv p {
+        font-size: 13px;
+        padding: 0px 0px;
+    }
+
+    .section-contato {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .contato-descricao {
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .contato-descricao h1 {
+        font-size: 20px;
+        padding: 30px 60px;
+    }
+
+    .contato-descricao p {
+        font-size: 18px;
+        padding: 30px 60px;
+    }
+
+    .contato-icons {
+        padding: 30px 60px;
+    }
+
+    .contato-icons img {
+        width: 35px;
+    }
+
+    .contato-forms {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        padding-bottom: 100px;
+    }
+
+    .formulario-container {
+        background-color: #c7dbf2;
+        padding: 30px;
+        border-radius: 10px;
+        width: 380px;
+        max-width: 380px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 12px;
+    }
+
+    .formulario textarea {
+        resize: none;
+    }
+
+    footer {
+        height: 110px;
+    }
+
+    .div-links {
+        gap: 15px;
+        font-size: 11px;
+    }
+
+    .div-copi {
+        font-size: 8px;
+    }
+}
+
