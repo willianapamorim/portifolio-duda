@@ -202,6 +202,7 @@ nav {
 
 .container-imoveis {
     display: flex;
+    flex-direction: column;
     width: 90%;
     flex-wrap: wrap;
     gap: 30px;
@@ -211,17 +212,69 @@ nav {
 }
 
 .imoveis-img {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
     border: 1px solid #00000050;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img/mundo\ park\ escuro.png);
+
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    text-align: center;
 }
+
+#img-1 {
+    background-image: url(img/mundopark/MundoParkescuro-1.jpg);
+}
+
+#img-1:hover {
+    background-image: url(img/mundopark/MundoPark-1.jpg);
+}
+
+#img-2 {
+    background-image: url(img/maisvilaandrade/maisvilaandradeescuro-1.png);
+}
+
+#img-2:hover {
+    background-image: url(img/maisvilaandrade/maisvilaandrade-1.png);
+}
+
+#img-3 {
+    background-image: url(img/santoamaro/santoamaroescuro-1.jpg);
+}
+
+#img-3:hover {
+    background-image: url(img/santoamaro/santoamaro-1.jpg);
+}
+
+#img-4 {
+    background-image: url(img/interlagos/interlagosescuro-1.jpg);
+}
+
+#img-4:hover {
+    background-image: url(img/interlagos/interlagos-1.jpg);
+}
+
+#img-5 {
+    background-image: url(img/sphera/spheraescuro-1.jpg);
+}
+
+#img-5:hover {
+    background-image: url(img/sphera/sphera-1.jpg);
+}
+
+#img-6 {
+    background-image: url(img/pqnabuco/nabucoescuro-1.jpg);
+}
+
+#img-6:hover {
+    background-image: url(img/pqnabuco/nabuco-1.jpg);
+}
+
+
+
 
 .imoveis-img:hover {
     transform: scale(1.1);
@@ -1117,3 +1170,223 @@ footer {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Estilos para a Galeria Modal --- */
+
+.modal {
+    display: none; /* Esconde a modal por padrão */
+    position: fixed; /* Fixa a modal na tela */
+    z-index: 1000; /* Garante que a modal fique por cima de TUDO */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Adiciona scroll se o conteúdo for maior que a tela */
+    background-color: rgba(0,0,0,0.9); /* Fundo preto semi-transparente */
+    padding-top: 20px; /* Espaço do topo para a modal */
+}
+
+/* Conteúdo da modal (a caixa que contém a imagem e as miniaturas) */
+.modal-conteudo {
+    position: relative;
+    background-color: #00000000;
+    margin: auto;
+    padding: 0;
+    width: 90%; /* Largura do conteúdo da modal */
+    max-width: 1000px; /* Largura máxima */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Botão de fechar */
+.fechar {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001; /* Garante que o botão de fechar fique acima da imagem */
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Imagem principal dentro da modal */
+.modal-imagem {
+    width: 100%;
+    height: 600px;
+    max-height: 70vh; /* Altura máxima para caber na tela */
+    object-fit: contain; /* Garante que a imagem seja contida sem cortar */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Miniaturas */
+.miniaturas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #222; /* Fundo para as miniaturas */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-x: auto; /* Permite rolagem horizontal se tiver muitas miniaturas */
+    -webkit-overflow-scrolling: touch; /* Melhor rolagem em iOS */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: #888 #555; /* Para Firefox */
+}
+
+.miniaturas-container::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.miniaturas-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do "thumb" da barra de rolagem */
+    border-radius: 4px;
+}
+
+.miniaturas-container::-webkit-scrollbar-track {
+    background-color: #555; /* Cor do "track" da barra de rolagem */
+}
+
+
+.miniatura {
+    width: 100px; /* Largura das miniaturas */
+    height: 70px; /* Altura das miniaturas */
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.3s ease;
+    object-fit: cover; /* Recorta a imagem para preencher a miniatura */
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+.miniatura:hover,
+.miniatura.active { /* 'active' será adicionado via JS para a miniatura selecionada */
+    opacity: 1;
+    border: 2px solid #000000;
+    transform: scale(1.05);
+}
+
+/* Botões de navegação (setas) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente para as setas */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0; /* Ajustado para ter um canto arredondado no lado oposto */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 768px) {
+    .modal-conteudo {
+        width: 95%;
+    }
+
+    .modal-imagem {
+        max-height: 60vh;
+    }
+
+    .miniatura {
+        width: 80px;
+        height: 55px;
+    }
+
+    .prev, .next {
+        font-size: 24px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        padding-top: 10px;
+    }
+    .fechar {
+        font-size: 30px;
+        top: 10px;
+        right: 20px;
+    }
+    .modal-imagem {
+        max-height: 50vh;
+    }
+    .miniatura {
+        width: 60px;
+        height: 40px;
+        margin: 0 3px;
+    }
+    .prev, .next {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+/* Estilo para garantir que o cursor seja um ponteiro para os blocos clicáveis */
+.imoveis-img {
+    cursor: pointer; /* Adicione esta linha */
+}
+
+/* Ajustes no seu CSS existente para o hover do imoveis-img */
+.imoveis-img:hover {
+    transform: scale(1.05); /* Um pouco menos agressivo que 1.1 para o hover */
+    transition: 0.7s;
+    /* Remover as seguintes linhas para evitar que o background-image e font-size padrão sejam aplicados */
+    /* background-image: url(img/mundo park.png); */
+    /* font-size: 35px; */
+}
