@@ -273,7 +273,37 @@ nav {
     background-image: url(img/pqnabuco/nabuco-1.jpg);
 }
 
+#img-7 {
+    background-image: url(img/mista/mistaescuro.jpg);
+}
 
+#img-7:hover {
+    background-image: url(img/mista/mista1.jpg);
+}
+
+#img-8 {
+    background-image: url(img/novaespraiada/espraiadaescuro.png);
+}
+
+#img-8:hover {
+    background-image: url(img/novaespraiada/espraiada1.png);
+}
+
+#img-9 {
+    background-image: url(img/oriz/orizescuro.jpg);
+}
+
+#img-9:hover {
+    background-image: url(img/oriz/oriz1.jpg);
+}
+
+#img-10 {
+    background-image: url(img/vilariobonito/riobonitoescuro.jpg);
+}
+
+#img-10:hover {
+    background-image: url(img/vilariobonito/riobonito1.jpg);
+}
 
 
 .imoveis-img:hover {

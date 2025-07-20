@@ -4,26 +4,21 @@ import { rolagem } from './rolagem.js';
 iniciarMenuHamburguer();
 rolagem();
 
-// Seu arquivo JavaScript, por exemplo, script.js
-// Certifique-se de que este script é carregado DEPOIS do HTML.
-
-// Objeto que mapeia o ID do projeto para um array de URLs das imagens
 const projetosImagens = {
     "mundo-park-campo-grande": [
-        "img/mundopark/MundoPark-1.jpg", // Sua imagem de hover atual pode ser a primeira da galeria
+        "img/mundopark/MundoPark-1.jpg",
         "img/mundopark/MundoPark-2.jpg",
         "img/mundopark/MundoPark-3.jpg",
         "img/mundopark/MundoPark-4.jpg",
         "img/mundopark/MundoPark-5.jpg"
-        // Adicione mais imagens para este projeto
     ],
     "vila-andrade-mais": [
-        "img/maisvilaandrade/maisvilaandrade-1.png", // Sua imagem de hover atual
+        "img/maisvilaandrade/maisvilaandrade-1.png", 
         "img/maisvilaandrade/maisvilaandrade-2.png",
         "img/maisvilaandrade/maisvilaandrade-3.png",
         "img/maisvilaandrade/maisvilaandrade-4.png",
         "img/maisvilaandrade/maisvilaandrade-5.png"
-        // Adicione mais imagens para este projeto
+        
     ],
     "viz-santo-amaro": [
         "img/santoamaro/santoamaro-1.jpg",
@@ -37,21 +32,49 @@ const projetosImagens = {
         "img/interlagos/interlagos-2.jpg",
         "img/interlagos/interlagos-3.jpg",
         "img/interlagos/interlagos-4.jpg",
-        "img/interlagos/interlagos-5.jpg",
+        "img/interlagos/interlagos-5.jpg"
     ],
     "sphera-panamby": [
         "img/sphera/sphera-1.jpg",
         "img/sphera/sphera-2.jpg",
         "img/sphera/sphera-3.jpg",
         "img/sphera/sphera-4.jpg",
-        "img/sphera/sphera-5.jpg",
+        "img/sphera/sphera-5.jpg"
     ],
     "pq-nabuco": [
         "img/pqnabuco/nabuco-1.jpg",
         "img/pqnabuco/nabuco-2.jpg",
         "img/pqnabuco/nabuco-3.jpg",
         "img/pqnabuco/nabuco-4.jpg",
-        "img/pqnabuco/nabuco-5.jpg",
+        "img/pqnabuco/nabuco-5.jpg"
+    ],
+    "mista": [
+        "img/mista/mista1.jpg",
+        "img/mista/mista2.jpg",
+        "img/mista/mista3.jpg",
+        "img/mista/mista4.jpg",
+        "img/mista/mista5.jpg"
+    ],
+    "nova-espraiada": [
+        "img/novaespraiada/espraiada1.png",
+        "img/novaespraiada/espraiada2.png",
+        "img/novaespraiada/espraiada3.png",
+        "img/novaespraiada/espraiada4.png",
+        "img/novaespraiada/espraiada5.png"
+    ],
+    "oriz": [
+        "img/oriz/oriz1.jpg",
+        "img/oriz/oriz2.jpg",
+        "img/oriz/oriz3.jpg",
+        "img/oriz/oriz4.jpg",
+        "img/oriz/oriz5.jpg"
+    ],
+    "rio-bonito": [
+        "img/vilariobonito/riobonito1.jpg",
+        "img/vilariobonito/riobonito2.jpg",
+        "img/vilariobonito/riobonito3.jpg",
+        "img/vilariobonito/riobonito4.jpg",
+        "img/vilariobonito/riobonito5.jpg"
     ]
     // Adicione mais projetos e suas respectivas imagens aqui
 };
